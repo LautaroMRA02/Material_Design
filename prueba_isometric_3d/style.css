@@ -1,0 +1,49 @@
+
+body{background-color: gainsboro;}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 70vh;
+    width: 90vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    background-color: antiquewhite;
+    border: aqua 1px solid ; height: 70vh;
+    width: 90vw;
+}
+.box_img{
+    width: 700px;
+    
+} 
+body > header > div > div:nth-child(1) > img{
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-shadow: rgb(0, 0, 0) 0px 10px 20px 5px;
+
+}
+body > header > div > div:nth-child(2) > img{
+    transform-style: preserve-3d;
+    box-shadow: rgba(0, 0, 0, 0.568) 10px 10px 20px 3px;
+    /* transform: rotateZ(90deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+    transform: translateX(200px) rotateZ(25deg) rotateY(45deg) rotateX(-45deg) translateY(100px);
+
+
+
+    transition: all .3s ease;
+
+
+}
+body > header > div > div:nth-child(2) > img:hover{
+   
+    transition: all .3s ease;
+
+}
